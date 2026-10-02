@@ -14,6 +14,7 @@ export const contributors: Contributor[] = [
   { name: "Fawaz Yusuff" },
   { name: "Godgift Achong" },
   { name: "Ibrahim Sulaimon Opeyemi" },
+  { name: "Jonathan Gomina" },
   { name: "Michelle Utomi" },
   { name: "Mutairu Dirisu" },
   { name: "Okeke Chukwuebuka" },
