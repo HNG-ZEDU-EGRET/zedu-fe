@@ -9,6 +9,7 @@ export const contributors: Contributor[] = [
   { name: "AbdulJaleel AbdulSamad" },
   { name: "Chukwuebuka Okonta" },
   { name: "Chukwumaeze Henry Chinaemerem" },
+  { name: "Fawaz Yusuff" },
   { name: "Godgift Achong" },
   { name: "Ibrahim Sulaimon Opeyemi" },
   { name: "Michelle Utomi" },
