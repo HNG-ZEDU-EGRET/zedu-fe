@@ -23,6 +23,7 @@ export const contributors: Contributor[] = [
   { name: "Ibrahim Sulaimon Opeyemi" },
   { name: "Jalar Jacques" },
   { name: "Jonathan Gomina" },
+  { name: "Kafayat Faniran" },
   { name: "Manu Jesse" },
   { name: "Michelle Utomi" },
   { name: "Mutairu Dirisu" },
