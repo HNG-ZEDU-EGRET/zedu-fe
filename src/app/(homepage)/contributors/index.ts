@@ -18,6 +18,7 @@ export const contributors: Contributor[] = [
   { name: "Chukwumaeze Henry Chinaemerem" },
   { name: "Ekwere Noble Nathan" },
   { name: "EMMANUEL EFFIONG" },
+  { name: "Fatimat Titilayo Mufutau" },
   { name: "Favour Chinaza" },
   { name: "Fawaz Yusuff" },
   { name: "Francis Anyah" },
