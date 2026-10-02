@@ -13,6 +13,7 @@ export const contributors: Contributor[] = [
   { name: "Chukwuebuka Okonta" },
   { name: "Chukwumaeze Henry Chinaemerem" },
   { name: "Ekwere Noble Nathan" },
+  { name: "EMMANUEL EFFIONG" },
   { name: "Fawaz Yusuff" },
   { name: "Godgift Achong" },
   { name: "Ibrahim Sulaimon Opeyemi" },
@@ -29,6 +30,7 @@ export const contributors: Contributor[] = [
   { name: "Samson eyitene" },
   { name: "Samuel Olowu" },
   { name: "TIENTCHEU WONSI DILANE" },
+  { name: "Victor Tommy Etudor" },
 ];
 
 export const contributorCount = contributors.length;
