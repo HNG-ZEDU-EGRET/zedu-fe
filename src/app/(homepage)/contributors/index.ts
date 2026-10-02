@@ -8,6 +8,7 @@ export type Contributor = {
 export const contributors: Contributor[] = [
   { name: "AbdulJaleel AbdulSamad" },
   { name: "Chukwumaeze Henry Chinaemerem" },
+  { name: "Oluboye Adekunle" },
 ];
 
 export const contributorCount = contributors.length;
