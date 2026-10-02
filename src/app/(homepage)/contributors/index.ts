@@ -10,6 +10,7 @@ export const contributors: Contributor[] = [
   { name: "Akinremi Oluwatoyin Mary" },
   { name: "Babatunde Omojuwa" },
   { name: "Bilkis Oladimeji" },
+  { name: "Christiana Mabel Nyuma" },
   { name: "Chukwuebuka Okonta" },
   { name: "Chukwumaeze Henry Chinaemerem" },
   { name: "Ekwere Noble Nathan" },
