@@ -18,6 +18,7 @@ export const contributors: Contributor[] = [
   { name: "Oluboye Adekunle" },
   { name: "Precious Nse" },
   { name: "Samson eyitene" },
+  { name: "Samuel Olowu" },
   { name: "TIENTCHEU WONSI DILANE" },
 ];
 
