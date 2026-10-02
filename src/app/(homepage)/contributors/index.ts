@@ -19,6 +19,7 @@ export const contributors: Contributor[] = [
   { name: "EMMANUEL EFFIONG" },
   { name: "Favour Chinaza" },
   { name: "Fawaz Yusuff" },
+  { name: "Francis Anyah" },
   { name: "Godgift Achong" },
   { name: "Ibrahim Sulaimon Opeyemi" },
   { name: "Jalar Jacques" },
