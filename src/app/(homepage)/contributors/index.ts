@@ -7,6 +7,7 @@ export type Contributor = {
 
 export const contributors: Contributor[] = [
   { name: "AbdulJaleel AbdulSamad" },
+  { name: "Abdullateef Dauda" },
   { name: "Adejumoke Oluwole" },
   { name: "Aisha Abdulkadir Joda" },
   { name: "Akinremi Oluwatoyin Mary" },
