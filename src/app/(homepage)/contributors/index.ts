@@ -17,6 +17,7 @@ export const contributors: Contributor[] = [
   { name: "Jonathan Gomina" },
   { name: "Michelle Utomi" },
   { name: "Mutairu Dirisu" },
+  { name: "Nduaguba Marcellus" },
   { name: "Okeke Chukwuebuka" },
   { name: "Okolie Chinonso Grace" },
   { name: "Olatunji Mafe" },
