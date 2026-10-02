@@ -10,6 +10,7 @@ export const contributors: Contributor[] = [
   { name: "Chukwuebuka Okonta" },
   { name: "Chukwumaeze Henry Chinaemerem" },
   { name: "Ibrahim Sulaimon Opeyemi" },
+  { name: "Michelle Utomi" },
   { name: "Okolie Chinonso Grace" },
   { name: "Oluboye Adekunle" },
   { name: "TIENTCHEU WONSI DILANE" },
