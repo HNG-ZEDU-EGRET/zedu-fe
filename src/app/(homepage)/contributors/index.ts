@@ -13,6 +13,7 @@ export const contributors: Contributor[] = [
   { name: "Michelle Utomi" },
   { name: "Okolie Chinonso Grace" },
   { name: "Oluboye Adekunle" },
+  { name: "Samson eyitene" },
   { name: "TIENTCHEU WONSI DILANE" },
 ];
 
