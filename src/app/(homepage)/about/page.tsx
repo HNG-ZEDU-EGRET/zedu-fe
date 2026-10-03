@@ -62,7 +62,7 @@ const philosophyCards = [
     desc: "Learning environments should be organized. Channels should have meaning. Communication should feel intentional.",
   },
   {
-    title: "AI Should Assist, Not Replace",
+    title: "AI Should Help, Not Replace",
     desc: "AI should reduce admin work, summarize discussions, and support learners - not overwhelm them.",
   },
   {
