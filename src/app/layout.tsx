@@ -31,14 +31,16 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <head>
-        <Script
-          async
-          src={`${gtmScriptUrl()}?id=${process.env.NEXT_PUBLIC_GA_ID}`}
-        />
-        <Script
-          id="google-analytics"
-          dangerouslySetInnerHTML={{
-            __html: `
+        {process.env.NEXT_PUBLIC_GA_ID && (
+          <>
+            <Script
+              async
+              src={`${gtmScriptUrl()}?id=${process.env.NEXT_PUBLIC_GA_ID}`}
+            />
+            <Script
+              id="google-analytics"
+              dangerouslySetInnerHTML={{
+                __html: `
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
@@ -46,8 +48,10 @@ export default function RootLayout({
                 page_path: window.location.pathname,
               });
             `,
-          }}
-        />
+              }}
+            />
+          </>
+        )}
       </head>
 
       <body className="max-w-screen overflow-x-hidden" suppressHydrationWarning>
