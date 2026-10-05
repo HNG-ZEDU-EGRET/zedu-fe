@@ -3,6 +3,7 @@
 
 import type { Metadata } from "next";
 
+import { Github } from "lucide-react";
 import { siteUrl } from "~/lib/env-urls";
 import { contributorCount, contributors } from "./_lib/contributors";
 
@@ -24,11 +25,11 @@ const initialsOf = (name: string) => {
 
 const EgretContributorsPage = () => {
   const githubCount = contributors.filter(
-    (entry) => entry.githubUrl !== ""
+    (entry) => entry.githubUsername !== ""
   ).length;
   const stats = [
     { amount: String(contributorCount), text: "Contributors" },
-    { amount: String(githubCount), text: "GitHub repos linked" },
+    { amount: String(githubCount), text: "GitHub profiles" },
     { amount: "HNG 15", text: "Internship" },
   ];
 
@@ -70,37 +71,22 @@ const EgretContributorsPage = () => {
           {contributors.map((entry, i) => {
             const base =
               "group flex h-full w-full flex-col gap-3 rounded-2xl bg-white px-5 py-5 drop-shadow-md transition duration-200 hover:-translate-y-0.5";
-            const box = (
-              <>
+            return (
+              <div key={i} className={base}>
                 <span className="flex h-11 w-11 items-center justify-center rounded-full bg-primary-50 text-sm font-bold text-primary-500">
                   {initialsOf(entry.name)}
                 </span>
                 <span className="block truncate text-base font-semibold text-neutral-900">
                   {entry.name}
                 </span>
-                <span className="block text-xs text-neutral-500">
-                  {entry.githubUrl
-                    ? "GitHub repository"
-                    : "Team Egret contributor"}
+                <span className="inline-flex items-center gap-1.5 text-xs text-neutral-500">
+                  <Github aria-hidden="true" className="h-3.5 w-3.5 shrink-0" />
+                  <span className="truncate">
+                    {entry.githubUsername
+                      ? `@${entry.githubUsername}`
+                      : "Team Egret contributor"}
+                  </span>
                 </span>
-              </>
-            );
-            return entry.githubUrl ? (
-              <a
-                key={i}
-                href={entry.githubUrl}
-                target="_blank"
-                rel="noreferrer"
-                className={
-                  base +
-                  " focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500"
-                }
-              >
-                {box}
-              </a>
-            ) : (
-              <div key={i} className={base}>
-                {box}
               </div>
             );
           })}
