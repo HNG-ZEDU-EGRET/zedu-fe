@@ -32,8 +32,8 @@ To run this app locally, you should have the following programs installed on you
 #### Clone this repository
 
 ```
-git clone git@github.com/hngprojects/Zedu_fe.git
-cd Zedu_fe
+git clone git@github.com/hngprojects/zedu-fe.git
+cd zedu-fe
 ```
 
 #### Install dependencies
