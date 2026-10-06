@@ -9,7 +9,7 @@ export const contributors: Contributor[] = [
     githubUsername: "TrippleA001",
   },
   { name: "Abdullateef Dauda", githubUsername: "abdul-o" },
-  { name: "Adejumoke Oluwole", githubUsername: "jumokeolu" },
+  { name: "Adejumoke Olubunmi Oluwole", githubUsername: "jumokeolu" },
   {
     name: "Aisha Abdulkadir Joda",
     githubUsername: "jodaaisha2-blip",
