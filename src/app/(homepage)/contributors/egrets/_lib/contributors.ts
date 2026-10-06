@@ -64,6 +64,10 @@ export const contributors: Contributor[] = [
     githubUsername: "OKEKE-PRINCEWILL",
   },
   {
+    name: "Okim Glory",
+    githubUsername: "Kimprudy",
+  },
+  {
     name: "Okolie Chinonso Grace",
     githubUsername: "chinonsograce",
   },
