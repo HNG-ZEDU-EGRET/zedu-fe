@@ -95,7 +95,7 @@ export const contributors: Contributor[] = [
     name: "TIENTCHEU WONSI DILANE",
     githubUsername: "TientcheuWonsiDilane",
   },
-  { name: "Victor Tommy Etudor", githubUsername: "victoretudor" },
+  { name: "Victor Etudor", githubUsername: "victoretudor" },
   { name: "Zubairu Ayuba", githubUsername: "ayzubair" },
 ];
 
