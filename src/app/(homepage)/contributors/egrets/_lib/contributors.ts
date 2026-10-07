@@ -58,7 +58,7 @@ export const contributors: Contributor[] = [
   { name: "Manu Jesse", githubUsername: "Manu2232" },
   { name: "Michelle Utomi", githubUsername: "michycipher" },
   {
-    name: "Mutairu Dirisu",
+    name: "Mutairu Dirisu Aji",
     githubUsername: "mutairudirisu",
   },
   { name: "Nduaguba Marcellus", githubUsername: "creativemcn" },
