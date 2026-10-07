@@ -86,7 +86,7 @@ export const contributors: Contributor[] = [
   { name: "Precious Nse Samuel", githubUsername: "EmkaySOL" },
   { name: "Preshnat", githubUsername: "presh27" },
   {
-    name: "Rukayyah Ibrahim",
+    name: "Ibrahim Rukayyah",
     githubUsername: "iamadoctorforreal",
   },
   { name: "Samson Eyitene", githubUsername: "eyisam" },
