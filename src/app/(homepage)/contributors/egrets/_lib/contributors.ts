@@ -33,7 +33,7 @@ export const contributors: Contributor[] = [
     name: "Elizabeth Oluwatobi David",
     githubUsername: "apptaster123-hash",
   },
-  { name: "EMMANUEL EFFIONG", githubUsername: "Solutionsboxx" },
+  { name: "Emmanuel Effiong", githubUsername: "Solutionsboxx" },
   {
     name: "Emmanuel Matthew Ekanem",
     githubUsername: "AnalytiqDigital",
@@ -53,7 +53,7 @@ export const contributors: Contributor[] = [
   },
   { name: "Jalar Jacques", githubUsername: "jalarjacques-gif" },
   { name: "Joanna Tebadda", githubUsername: "JoannaTebadda" },
-  { name: "Jonathan Gomina", githubUsername: "jonathan401" },
+  { name: "Jonathan Kehinde Gomina", githubUsername: "jonathan401" },
   { name: "Kafayat Faniran", githubUsername: "KaffyDevelops" },
   { name: "Manu Jesse", githubUsername: "Manu2232" },
   { name: "Michelle Utomi", githubUsername: "michycipher" },
