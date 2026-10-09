@@ -8,7 +8,8 @@ import {
 } from "~/components/ui/popover";
 
 interface SearchFiltersProps {
-  // eslint-disable-next-line no-unused-vars
+  initialChannel?: string;
+
   onFilterChange: (filters: {
     type?: "messages" | "people";
     from?: string;
@@ -48,6 +49,7 @@ type UserOption = {
 
 export const SearchFilters = ({
   onFilterChange,
+  initialChannel,
   channels = [],
   users = [],
 }: SearchFiltersProps) => {
@@ -55,9 +57,10 @@ export const SearchFilters = ({
     "messages" | "people" | null
   >("messages");
   const [selectedFrom, setSelectedFrom] = useState<UserOption | null>(null);
-  const [selectedChannel, setSelectedChannel] = useState<ChannelOption | null>(
-    null
-  );
+  const [selectedChannel, setSelectedChannel] = useState<Pick<
+    ChannelOption,
+    "name"
+  > | null>(initialChannel ? { name: initialChannel } : null);
   const [selectedDate, setSelectedDate] = useState<{
     type: string;
     value: string;
@@ -99,7 +102,7 @@ export const SearchFilters = ({
 
   const availableChannels = selectedChannel
     ? filteredChannels.filter(
-        (channel) => channel.channel_id !== selectedChannel.channel_id
+        (channel) => channel.name !== selectedChannel.name
       )
     : filteredChannels;
 
