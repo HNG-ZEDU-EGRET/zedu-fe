@@ -31,7 +31,9 @@ const EditProfileDialog = ({ isOpen, onClose }: any) => {
   const [avatar, setAvatar] = useState<any>("");
   const [avatarFile, setAvatarFile] = useState<File | null>(null);
   const [namePronunciation, setNamePronunciation] = useState("");
-  const [timezone, setTimezone] = useState(user?.timezone);
+  const [timezone, setTimezone] = useState(
+    user?.timezone || timezones[0] || ""
+  );
   const [avatarKey, setAvatarKey] = useState(Date.now());
   const [buttonLoading, setButtonLoading] = useState(false);
 
@@ -49,6 +51,7 @@ const EditProfileDialog = ({ isOpen, onClose }: any) => {
 
     setTitle(user?.title || "");
     setNamePronunciation(user?.name_pronounciation);
+    setTimezone(user?.timezone || timezones[0] || "");
   }, [user]);
 
   const handleSave = async () => {
@@ -59,7 +62,7 @@ const EditProfileDialog = ({ isOpen, onClose }: any) => {
     formData.append("email", email);
     formData.append("phone", phone);
     formData.append("title", title);
-    formData.append("timezone", timezone);
+    formData.append("timezone", timezone || "");
     formData.append("name_pronounciation", namePronunciation);
     if (avatarFile) {
       const compressedAvatar = await compressImage(avatarFile);
@@ -81,7 +84,7 @@ const EditProfileDialog = ({ isOpen, onClose }: any) => {
           type: ACTIONS.PROFILE_CALLBACK,
           payload: !state?.profileCallback,
         });
-        showSuccess(res?.data?.message);
+        showSuccess(res?.data?.message || "Profile updated successfully.");
       }
 
       setTimeout(() => {
@@ -90,6 +93,12 @@ const EditProfileDialog = ({ isOpen, onClose }: any) => {
       }, 1000);
     } catch (err) {
       setButtonLoading(false);
+      const message =
+        axios.isAxiosError(err) &&
+        typeof err.response?.data?.message === "string"
+          ? err.response.data.message
+          : "Unable to save profile changes. Please try again.";
+      showError(message);
     }
   };
 
