@@ -28,7 +28,7 @@ export const contributors: Contributor[] = [
     githubUsername: "Henrycalebz0",
   },
   { name: "Dolapo Ewulogbo", githubUsername: "DolapoEwulogbo" },
-  { name: "Ekwere Noble Nathan", githubUsername: "ENJ0Y-Labs" },
+  { name: "Ekwere Noble", githubUsername: "ENJ0Y-Labs" },
   {
     name: "Elizabeth Oluwatobi David",
     githubUsername: "apptaster123-hash",
