@@ -10,7 +10,7 @@ import { contributorCount, contributors } from "./_lib/contributors";
 export const metadata: Metadata = {
   title: "Zedu Egret Contributors",
   description:
-    "Contributors who have actively participated and contributed to Zedu chat during the HNG 15 internship in Team Egret.",
+    "Meet the Contributors who have actively participated and contributed to Zedu chat during the HNG 15 internship in Team Egret.",
   alternates: {
     canonical: siteUrl("/contributors/egrets"),
   },
