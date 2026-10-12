@@ -48,7 +48,7 @@ export const contributors: Contributor[] = [
   { name: "Godgift Achong", githubUsername: "giftninho" },
   { name: "Godspower Nwankwo", githubUsername: "GODSPE1" },
   {
-    name: "Ibrahim Rukayyah",
+    name: "Ibrahim Rukayyah S",
     githubUsername: "iamadoctorforreal",
   },
   {
